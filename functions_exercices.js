@@ -64,3 +64,35 @@ console.log(singleLetterCount("testT","T"));
 //multipleLetterCount
 //this function takes in one parameter (a string) and returns an object with
 //the keys being the letters and the values being the count of the letter
+function multipleLetterCount(word){
+    let letterObject = {};
+    for(let i=0;i<word.length;i++){
+        if(!(word[i] in letterObject)){
+            letterObject[word[i]] = 1;
+        }else{
+            letterObject[word[i]]++;
+        }
+    }
+    return letterObject;
+}
+console.log(multipleLetterCount("hello"));
+
+//arrayManipulation
+//this function should take in at most four parameters (an array, command, location, and value).
+//If the command is "remove" and the location is "end", the function should remove the last value in the array and return the value removed. (In this case, the function only needs three arguments.)
+//If the command is "remove" and the location is "beginning", the function should remove the first value in the array and return the value removed. (In this case, the function only needs three arguments.)
+//If the command is "add" and the location is "beginning", the function should add the value (fourth parameter) to the beginning of the array and return the array.
+//If the command is "add" and the location is "end", the function should add the value (fourth parameter) to the end of the array and return the array.
+function arrayManipulation(arr,command,location,value){
+    if(command==="remove" && location==="end"){
+        arr.pop();
+    }else if(command==="remove" && location==="beginning"){
+        arr.shift();
+    }else if(command==="add" && location==="end"){
+        arr.push(value);
+    }else if(command==="add" && location==="beginning"){
+        arr.unshift(value);
+    }
+    return arr;
+}
+console.log(arrayManipulation([1,2,3,4],"add","beginning",9));
