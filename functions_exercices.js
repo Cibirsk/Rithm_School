@@ -22,3 +22,7 @@ console.log(printDay(2));
 
 //Last Element
 //this function takes in one parameter (an array) and returns the last value in the array.
+function lastElement(arr){
+    return arr[length -1];
+}
+console.log([1,2,3,4]);
