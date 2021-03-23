@@ -96,3 +96,20 @@ function arrayManipulation(arr,command,location,value){
     return arr;
 }
 console.log(arrayManipulation([1,2,3,4],"add","beginning",9));
+
+//isPalindrome
+//This function should take in one parameter and returns true or false if it is a palindrome. 
+//As a bonus, allow your function to ignore whitespace and capitalization so that isPalindrome
+//('a man a plan a canal Panama'); returns true
+function isPalindrome(str){
+    for(let i =0; i < str.length/2; i++){
+   if(str[i].toLowerCase() !== str[str.length-1-i].toLowerCase()){
+     return false;
+   }
+ }
+ return true;
+}
+console.log(isPalindrome("cic"));
+
+//PART 3
+//Rock Scissor Paper
