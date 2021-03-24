@@ -113,3 +113,43 @@ console.log(isPalindrome("cic"));
 
 //PART 3
 //Rock Scissor Paper
+//build a game of Rock/Paper/Scissor where through the use of the prompt function,
+// a user can enter their choice and based on a random selection -
+// they can either tie/win or lose against a computer.
+function game(userChoice){
+    let alea = Math.random();
+    let computChoice;
+    if(alea > 0 && alea < 0.33){
+        computChoice="rock";
+    }else if(alea > 0.33 && alea < 0.66) {
+        computChoice="scissor";
+    }else{
+        computChoice="paper";
+    }
+
+    if(computChoice==="rock" && userChoice==="rock"){
+        return "draw";
+    }else if(computChoice==="rock" && userChoice==="scissor"){
+        return "computer win, computer picked: " + computChoice;
+    }else if(computChoice==="rock" && userChoice==="paper"){
+        return "you win, computer picked: " + computChoice;
+    }else if(computChoice==="scissor" && userChoice==="scissor"){
+        return "draw, computer picked: " + computChoice;
+    }else if(computChoice==="scissor" && userChoice==="paper"){
+        return "computer win";
+    }else if(computChoice==="scissor" && userChoice==="rock"){
+        return "you win";
+    }else if(computChoice==="paper" && userChoice==="paper"){
+        return "draw";
+    }else if(computChoice==="paper" && userChoice==="scissor"){
+        return "you win";
+    }else if(computChoice==="paper" && userChoice==="rock"){
+        return "computer win";
+    }
+}
+
+let userChoice;
+while( !(userChoice==="rock" || userChoice==="scissor" || userChoice==="paper" )){
+    userChoice= prompt("rock, scissor, paper ? :  ");
+}
+console.log(game(userChoice));
