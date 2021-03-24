@@ -128,7 +128,7 @@ function game(userChoice){
     }
 
     if(computChoice==="rock" && userChoice==="rock"){
-        return "draw";
+        return "draw, computer picked: " + computChoice;
     }else if(computChoice==="rock" && userChoice==="scissor"){
         return "computer win, computer picked: " + computChoice;
     }else if(computChoice==="rock" && userChoice==="paper"){
@@ -136,15 +136,15 @@ function game(userChoice){
     }else if(computChoice==="scissor" && userChoice==="scissor"){
         return "draw, computer picked: " + computChoice;
     }else if(computChoice==="scissor" && userChoice==="paper"){
-        return "computer win";
+        return "computer win, computer picked: " + computChoice;
     }else if(computChoice==="scissor" && userChoice==="rock"){
-        return "you win";
+        return "you win, computer picked: " + computChoice;
     }else if(computChoice==="paper" && userChoice==="paper"){
-        return "draw";
+        return "draw, computer picked: " + computChoice;
     }else if(computChoice==="paper" && userChoice==="scissor"){
-        return "you win";
+        return "you win, computer picked: " + computChoice;
     }else if(computChoice==="paper" && userChoice==="rock"){
-        return "computer win";
+        return "computer win, computer picked: " + computChoice;
     }
 }
 
