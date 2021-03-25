@@ -1,8 +1,9 @@
 // add whatever parameters you deem necessary - good luck!
 function repeat(str, nbr){
+    let newStr="";
     for(let i=0;i<nbr;i++){
-        str=str.concat(str);
+        newStr=newStr.concat(str);
     }
-    return str;
+    return newStr;
 }
-console.log(repeat("Matt",0));
+console.log(repeat("Matt",3));
