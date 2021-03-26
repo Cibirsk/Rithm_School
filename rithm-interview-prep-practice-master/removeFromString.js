@@ -1,7 +1,9 @@
 // add whatever parameters you deem necessary - good luck!
 function removeFromString(str,index,char){
-    let newStr;
-    newStr=str.slice((index - char),char);
+    let newStr= str.split('');
+    newStr.splice(index,char);
+    newStr=newStr.join("");
     return newStr;
+
 }
-console.log(removeFromString("Elie",0,1));
+console.log(removeFromString("Elie",2,2));
