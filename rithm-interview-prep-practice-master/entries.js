@@ -1,6 +1,10 @@
 // add whatever parameters you deem necessary - good luck!
-function entries(){
-
+function entries(obj){
+    let arr=[];
+    for(let i in obj){
+        arr.push([i,obj[i]]);
+    }
+    return arr;
 }
 
 let obj11 = { a: 1, b: 2, c: 3 };
