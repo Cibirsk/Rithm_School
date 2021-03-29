@@ -1,35 +1,20 @@
 // add whatever parameters you deem necessary - good luck!
-/*
 function twoHighest(arr){
-    let myArrResult=[0,0];
-
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]>myArrResult[1]){
-            myArrResult[1]=arr[i];
+    let myArr=arr;
+    let len=myArr.length;
+    for(let j=0; j < myArr.length; j++){
+        for(let i=0 ; i < myArr.length ; i++){
+            if(myArr[i] > myArr[i+1]){
+                //1ere possibilité sur le principe de "bubble sort"
+                //[ myArr[i], myArr[i+1] ] = [ myArr[i+1], myArr[i] ];
+                //2eme possibilité sur le même principe 
+                let tmp= myArr[i];
+                myArr[i] = myArr[i+1];
+                myArr[i+1] = tmp;
+            }
         }
     }
-     for(let i=0;i<arr.length;i++){
-        if(arr[i]>myArrResult[0]){
-            if((myArrResult[1] > arr[i])){
-                myArrResult[0]=arr[i];
-            } //ajouter une condition pour le 4ème cas avec 1 2 2
-        }
-    }
-    return myArrResult;
-}
-*/
-
-//essayer un tri de tableau du petit vers le grand
-//créer un tableau intermédiaire pour classer les valeurs
-//et ensuite prendre arr.length-1 et arr.length-2
-function twoHighest(arr){
-    let myArr=[0];
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]> myArr[0]){
-            myArr.push(arr[i]);
-        }
-    }
-    return myArr;
+    return [myArr[len-2] , myArr[len-1]];
 }
 console.log(twoHighest([1, 2, 10, 8])); // [8, 10]
 console.log(twoHighest([6, 1, 9, 10, 4])); // [9,10]
