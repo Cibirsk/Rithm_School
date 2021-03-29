@@ -16,14 +16,6 @@ function twoHighest(arr){
     }
 
     return myArrResult;
-    let myArr1=arr;
-    let myArr2=arr;
-    for(let i=0;i<myArr1;i++){
-        if(myArr1[i] < myArr1[i+1]){
-            myArr1.splice(i,1);
-        }
-    }
-    return myArr1;
 }
 
 console.log(twoHighest([1, 2, 10, 8])); // [8, 10]
