@@ -1,4 +1,5 @@
 // add whatever parameters you deem necessary - good luck!
+/*
 function twoHighest(arr){
     let myArrResult=[0,0];
 
@@ -14,12 +15,14 @@ function twoHighest(arr){
             } //ajouter une condition pour le 4ème cas avec 1 2 2
         }
     }
-
     return myArrResult;
 }
+*/
 
+//essayer un tri de tableau du petit vers le grand
+//créer un tableau intermédiaire pour classer les valeurs
+//et ensuite prendre arr.length-1 et arr.length-2
 console.log(twoHighest([1, 2, 10, 8])); // [8, 10]
 console.log(twoHighest([6, 1, 9, 10, 4])); // [9,10]
 console.log(twoHighest([4, 25, 3, 20, 19, 5])); // [20,25]
 console.log(twoHighest([1, 2, 2])); // [2, 2];
-
