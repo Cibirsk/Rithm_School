@@ -22,6 +22,9 @@ function twoHighest(arr){
 //essayer un tri de tableau du petit vers le grand
 //créer un tableau intermédiaire pour classer les valeurs
 //et ensuite prendre arr.length-1 et arr.length-2
+function twoHighest(arr){
+
+}
 console.log(twoHighest([1, 2, 10, 8])); // [8, 10]
 console.log(twoHighest([6, 1, 9, 10, 4])); // [9,10]
 console.log(twoHighest([4, 25, 3, 20, 19, 5])); // [20,25]
