@@ -1,6 +1,10 @@
 // add whatever parameters you deem necessary - good luck!
-function stringFromObject(){
-
+function stringFromObject(obj){
+    let resultString="";
+    for(let i in obj){
+        resultString= resultString + i + " " + "=" + " " + obj[i] + "," + " ";
+    }
+    return resultString;
 }
 
 console.log(stringFromObject({ a: 1, b: '2' }));
@@ -11,4 +15,4 @@ console.log(stringFromObject({ name: 'Elie', job: 'Instructor', isCatOwner: fals
 // "name = Elie, job = Instructor, isCatOwner = false"
 
 
-stringFromObject({}); // ""
+console.log(stringFromObject({})); // ""
