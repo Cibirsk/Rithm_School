@@ -1,6 +1,12 @@
 // add whatever parameters you deem necessary - good luck!
-function countNumbers(){
-
+function countNumbers(arr){
+    let count=0;
+    for(let i=0;i<arr.length;i++){
+        if(typeof arr[i] == "number"){
+            count = count + 1;
+        }
+    }
+    return count;
 }
 
 console.log(countNumbers(['a','b','3','awesome','4'])); // 2
