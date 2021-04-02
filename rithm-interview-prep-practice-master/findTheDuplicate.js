@@ -1,6 +1,15 @@
 // add whatever parameters you deem necessary - good luck!
 function findTheDuplicate(arr){
-    
+   let myNumb;
+   for(let i of arr){
+       for(let j of arr){
+           j++;
+           if(i === j){
+               myNumb=i;
+           }
+       }
+   }
+   return myNumb;
 }
 
 console.log(findTheDuplicate([1,2,1,4,3,12])); // 1
