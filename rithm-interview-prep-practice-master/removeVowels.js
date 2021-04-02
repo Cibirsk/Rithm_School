@@ -1,4 +1,5 @@
 // add whatever parameters you deem necessary - good luck!
+/*
 function removeVowels(str){
     let myStr=str.split('');
     let listVowels=["a","e","i","o","u","A","E","I","O","U"];
@@ -13,6 +14,18 @@ function removeVowels(str){
    myStr= myStr.join("");
    return myStr;
 }
+*/
+function removeVowels(str){
+    let theVovels= "aeiouAEIOU";
+    let newStr="";
+    for(let i of str){
+        if(!theVovels.includes(i)){
+            newStr += i;
+        }
+    }
+    return newStr;
+}
+
 
 console.log(removeVowels("Hello!")); // "Hll!"
 console.log(removeVowels("Tomatoes")); // "Tmts"
