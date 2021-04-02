@@ -5,8 +5,8 @@ function removeVowels(str){
     for(let i=0;i<myStr.length;i++) {
        for(let j=0;j<listVowels.length;j++) {
             if( myStr[i] === listVowels[j]){
-                console.log(myStr);
                 myStr.splice(i,1); 
+                i--;
             }
        }
    }
@@ -14,8 +14,8 @@ function removeVowels(str){
    return myStr;
 }
 
-//console.log(removeVowels("Hello!")); // "Hll!"
+console.log(removeVowels("Hello!")); // "Hll!"
 console.log(removeVowels("Tomatoes")); // "Tmts"
-//console.log(removeVowels("Reverse Vowels In The String")); // "Rvrs Vwls n Th Strng"
-//console.log(removeVowels("aeiou")); // ""
-//console.log(removeVowels("why try, shy fly?")); // "why try, shy fly?"
+console.log(removeVowels("Reverse Vowels In The String")); // "Rvrs Vwls n Th Strng"
+console.log(removeVowels("aeiou")); // ""
+console.log(removeVowels("why try, shy fly?")); // "why try, shy fly?"
