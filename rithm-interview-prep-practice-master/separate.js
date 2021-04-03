@@ -1,6 +1,24 @@
 // add whatever parameters you deem necessary - good luck!
 function separate(arr){
-
+    let newArr=[];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] === "cat"){
+            newArr.push("cat");
+        }
+    }
+    
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] === "water"){
+            newArr.push("water");
+        }
+    }
+    
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] === "dog"){
+            newArr.push("dog");
+        }
+    }
+    return newArr;
 }
 
 
