@@ -26,3 +26,4 @@ try {
 } finally {
    console.log("No matter what we will see this statement");
 }
+
