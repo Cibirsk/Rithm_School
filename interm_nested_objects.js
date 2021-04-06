@@ -16,9 +16,9 @@ let instructorData = {
     }
 };
 
-instructorData.name; // "Elie"
-instructorData.additionalData.instructor; // true
-instructorData.additionalData.favoriteHobbies[2]; // "Coding"
-instructorData.additionalData.moreDetails.favoriteBasketballTeam; // "New York Knicks"
-instructorData.additionalData.moreDetails.hometown.state; // "NJ"
-instructorData.additionalData.moreDetails.citiesLivedIn[1]; // "Providence"
+console.log(instructorData.name); // "Elie"
+console.log(instructorData.additionalData.instructor); // true
+console.log(instructorData.additionalData.favoriteHobbies[2]); // "Coding"
+console.log(instructorData.additionalData.moreDetails.favoriteBasketballTeam); // "New York Knicks"
+console.log(instructorData.additionalData.moreDetails.hometown.state); // "NJ"
+console.log(instructorData.additionalData.moreDetails.citiesLivedIn[1]); // "Providence"
