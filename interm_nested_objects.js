@@ -22,3 +22,19 @@ console.log(instructorData.additionalData.favoriteHobbies[2]); // "Coding"
 console.log(instructorData.additionalData.moreDetails.favoriteBasketballTeam); // "New York Knicks"
 console.log(instructorData.additionalData.moreDetails.hometown.state); // "NJ"
 console.log(instructorData.additionalData.moreDetails.citiesLivedIn[1]); // "Providence"
+
+let petitDej = {
+    liquide : "eau chaude",
+    ingredient : {
+        option : ["jus de citron", "miel"],
+        cereales : {
+            avoine : "complet",
+            raisin : {
+                texture : ["sec", "frais"],
+                couleur : "noir"
+            }
+        }
+    }
+}
+
+console.log(petitDej.ingredient.cereales.raisin.texture[1]);
